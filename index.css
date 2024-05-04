@@ -1,0 +1,129 @@
+body {
+    color: white;
+    background-image: url("./img/3607424.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    /* Adicionando um fundo de fallback caso a imagem não carregue */
+    background-color: #000;
+}
+
+/* Estilos do menu de navegação */
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a {
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #be8e42;
+}
+
+/* Estilos do cabeçalho */
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #be8e42;
+}
+
+h1 {
+    color: #be8e42;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Estilos do rodapé */
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* Adicionando espaço entre o conteúdo e o rodapé */
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+footer a {
+    margin: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 2px;
+}
+
+/* Estilos do formulário de contato */
+.contact-form {
+    width: 80%; /* Reduzindo a largura do formulário */
+    margin: 20px auto; /* Centralizando o formulário horizontalmente e reduzindo a margem superior */
+    max-width: 600px; /* Limitando a largura máxima do formulário */
+}
+
+.contact-form label {
+    display: block; /* Garantindo que cada rótulo fique em uma linha separada */
+    margin-bottom: 8px; /* Adicionando espaço entre os rótulos e os campos de entrada */
+}
+
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px; /* Adicionando espaço extra entre os campos de entrada */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    height: 150px; /* Ajustando a altura do campo de mensagem */
+}
+
+.contact-form button {
+    color: white;
+    background-color: #007bff; /* Alterando a cor do botão de envio */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adicionando uma transição suave de cor */
+}
+
+.contact-form button:hover {
+    background-color: #0056b3; /* Alterando a cor do botão ao passar o mouse sobre ele */
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 0 20px; /* Reduzindo o preenchimento nas laterais */
+    }
+
+    header img {
+        width: 100px; /* Reduzindo o tamanho da imagem no cabeçalho */
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 24px; /* Reduzindo o tamanho do texto principal */
+    }
+
+    .contact-form {
+        width: 100%; /* Garantindo que o formulário ocupe toda a largura */
+    }
+
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        width: 100%; /* Fazendo os campos de entrada ocuparem toda a largura disponível */
+    }
+}
